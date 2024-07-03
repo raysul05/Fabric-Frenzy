@@ -1,0 +1,234 @@
+* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and main layout styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar on the body */
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    height: 60px;
+    width: 100%; /* Ensure header spans full width */
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; /* Adjust max width as needed */
+    margin: 0 auto; /* Center align the header container */
+    padding: 0 20px;
+}
+
+.logo img {
+    max-width: 120px; /* Adjust maximum width of the logo */
+    height: 65px; /* Maintain aspect ratio */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+    width: 200px;
+}
+
+.cart-icon {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.cart-icon:hover {
+    background-color: #333;
+}
+
+main {
+    padding: 20px;
+    width: 100%; /* Ensure main content spans full width */
+}
+
+.category-section {
+    padding: 20px 0;
+    text-align: center;
+    width: 100%; /* Ensure section spans full width */
+}
+
+.category-slider {
+    display: flex;
+    overflow: hidden; /* Hide overflow to remove scrollbar */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+}
+
+.category-slide {
+    flex: 0 0 auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 10px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+}
+
+.category-slide img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.category-slide h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.category-slide p {
+    margin: 5px 0;
+}
+
+.category-slide .add-to-cart {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.category-slide .add-to-cart:hover {
+    background: #444;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+.prev,
+.next {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #444;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.buy-button {
+    background-color: #ff5733; /* Vibrant orange background */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #c70039; /* Darker red on hover */
+    transform: scale(1.05);
+}
+
+.buy-button:active {
+    background-color: #900c3f; /* Even darker red on click */
+}
+/* Add your custom styles here */
+
+.category-slide {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-slide:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
