@@ -35,6 +35,7 @@ header {
 .logo img {
     max-width: 120px; /* Adjust maximum width of the logo */
     height: 65px; /* Maintain aspect ratio */
+    border-radius: 25%;
 }
 
 nav {

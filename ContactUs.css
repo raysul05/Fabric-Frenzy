@@ -38,6 +38,7 @@ header {
 .logo img {
     max-width: 120px; /* Adjust maximum width of the logo */
     height: 65px; /* Maintain aspect ratio */
+    border-radius: 25%;
 }
 
 nav {
@@ -62,7 +63,7 @@ main {
     max-width: 1000px; /* Increased max-width */
     width: 80%; /* Set width to a percentage of the viewport */
     margin: auto; /* Center horizontally */
-    padding: 40px; /* Increased padding */
+    padding: 3px; /* Increased padding */
     background: #f4f4f4;
     border-radius: 16px; /* Increased border radius for a larger container */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly larger box shadow */

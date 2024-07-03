@@ -34,6 +34,7 @@ header {
 .logo img {
     max-width: 120px; /* Adjust maximum width of the logo */
     height: auto; /* Maintain aspect ratio */
+    border-radius: 25%;
 }
 
 nav {
@@ -54,15 +55,18 @@ nav a {
 
 /* Home Section Styles */
 .home-section {
-    background: url('https://media.istockphoto.com/id/1175815530/photo/we-all-have-to-start-somewhere.jpg?s=2048x2048&w=is&k=20&c=lY8ezIkV23PyUxvIwQdxZJkCUJe1vA16i_oJ67f12CM=') no-repeat center center/cover; /* Background image */
+    background: url('https://res.cloudinary.com/hamstech/images/v1617970977/Hamstech%20App/fashion-design-classes-1_804511576f1a3/fashion-design-classes-1_804511576f1a3.jpeg') no-repeat center center/cover; /* Background image */
     color: white;
     text-align: center;
     padding: 100px 20px;
 }
 
 .home-section .home-content {
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
+    border-radius: 25%;
+    background-color: rgba(5, 1, 8, 0.8);
+    
 }
 
 /* Featured, Trending, and New Arrivals Section Styles */
