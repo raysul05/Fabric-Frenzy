@@ -55,8 +55,8 @@ nav a {
 
 /* Home Section Styles */
 .home-section {
-    background: url('https://i.pinimg.com/736x/1b/e1/c9/1be1c93fac4d49fecbca2432c388b3c6.jpg'); 
-    color: white;
+    background: url(imgg/56.jpg); 
+    color: rgb(22, 13, 13);
     text-align: center;
     padding: 100px 20px;
 }
@@ -107,9 +107,9 @@ nav a {
 
 /* Team Section Styles */
 .team-section {
-    padding: 40px 20px;
+    padding: 50px 20px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #b48888;
 }
 
 .team-section h2 {
@@ -121,26 +121,46 @@ nav a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .team-member {
     position: relative;
-    background-color: #fff;
+    background-color: #b697c2;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
     flex: 1 1 calc(25% - 40px); /* Adjust the width to fit 4 in a row */
-    max-width: 250px;
+    max-width: 325px;
+    transition: transform 0.3s ease;
+}
+.team-member1 {
+    position: relative;
+    background-color: #99946b;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(25% - 40px); /* Adjust the width to fit 4 in a row */
+    max-width: 350px;
     transition: transform 0.3s ease;
 }
 
 .team-member img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.team-member1 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #b697c2;
     object-fit: cover;
     margin-bottom: 10px;
 }
@@ -174,6 +194,9 @@ nav a {
 .team-member:hover {
     transform: translateY(-10px);
 }
+.team-member1:hover {
+    transform: translateY(-10px);
+}
 
 .team-member:hover .team-member-info {
     opacity: 1;
@@ -182,7 +205,7 @@ nav a {
 
 /* Footer Styles */
 footer {
-    background-color: #000000;
+    background-color: #414040c5;
     color: #fff;
     padding: 20px 0;
 }
