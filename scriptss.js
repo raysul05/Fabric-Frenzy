@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const productPrice = slide.getAttribute('data-price');
         const paymentLink = slide.getAttribute('data-payment-link');
 
-        const confirmationMessage = `Product: ${productName}\nSize: ${productSize}\nColor: ${productColor}\nBrand: ${productBrand}\nPrice: RM${productPrice}\n\nProceed to buy?`;
+        const confirmationMessage = `Product: ${productName}\nSize: ${productSize}\nColor: ${productColor}\nPrice: RM${productPrice}\n\nProceed to buy?`;
 
         if (confirm(confirmationMessage)) {
             window.location.href = paymentLink; // Redirect to payment link if confirmed
