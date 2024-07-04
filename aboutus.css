@@ -64,6 +64,10 @@ nav a {
 .home-section .home-content {
     max-width: 800px;
     margin: 0 auto;
+    background-color: rgba(188, 111, 233, 0.7); /* Adjust background color and opacity */
+    padding: 20px; /* Adjust padding as needed */
+    border: 2px solid #000; /* Border around the content box */
+    border-radius: 10px; /* Rounded corners */
 }
 
 /* Company Background Section */
@@ -135,6 +139,7 @@ nav a {
     flex: 1 1 calc(25% - 40px); /* Adjust the width to fit 4 in a row */
     max-width: 325px;
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 .team-member1 {
     position: relative;
@@ -147,6 +152,7 @@ nav a {
     flex: 1 1 calc(25% - 40px); /* Adjust the width to fit 4 in a row */
     max-width: 350px;
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .team-member img {

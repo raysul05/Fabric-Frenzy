@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - A46 Footgear E-Bundle</title>
+    <title>About Us - Fabric-Frenzy😎</title>
     <link rel="stylesheet" href="aboutus.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -48,25 +48,25 @@
         <section class="team-section">
             <h2>Our Team</h2>
             <div class="team-container">
-                <div class="team-member1">
+                <div class="team-member1" data-href="https://www.instagram.com/raysul_5?igsh=MWMzNWFldmcxZDFueA%3D%3D&utm_source=qr" >
                     <img src="imgg/siyamm.png" alt="Profile Picture 1">
                     <h3>MD Raysul Islam Siyam</h3>
                     <p><b>CEO</b></p>
                     <p>Raysul is responsible for the overall vision and direction of the company.</p>
                 </div>
-                <div class="team-member">
+                <div class="team-member" data-href="https://www.instagram.com/arpsbndi._?igsh=MW1vMDBqeHFyazI2cA==" >
                     <img src="imgg/aref.jpg" alt="Profile Picture 2">
                     <h3>Muhammad Arief Bin Subandi</h3>
                     <p><b>COO</b></p>
                     <p>Airef oversees the company's daily operations and ensures everything runs smoothly.</p>
                 </div>
-                <div class="team-member">
+                <div class="team-member" data-href="https://www.instagram.com/nunyi?igsh=MWJnY2ZlZW02OXZqaQ==" >
                     <img src="https://myguru.upsi.edu.my/documents/photo/student/E20231031683_thumb.jpg" alt="Profile Picture 3">
                     <h3>Nuri Saadan Bin Khaulid</h3>
                     <p><b>CFO</b></p>
                     <p>Nuri manages the company's finances, including financial planning and risk management.</p>
                 </div>
-                <div class="team-member">
+                <div class="team-member" data-href="https://www.instagram.com/putra_zairul?igsh=NDVjMWcwcGo3cWpt" >
                     <img src="imgg/putra.jpg" alt="Profile Picture 4">
                     <h3>Putra Zairul Bin Shamsudin</h3>
                     <p><b>CMO</b></p>
@@ -74,6 +74,7 @@
                 </div>
             </div>
         </section>
+        
     </main>
     <footer>
         <div class="footer-content">
@@ -97,6 +98,33 @@
             </div> -->
         </div>
     </footer>
+<script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const teamMembers = document.querySelectorAll('.team-member');
+                teamMembers.forEach(function(member) {
+                    member.addEventListener('click', function() {
+                        const url = this.getAttribute('data-href');
+                        if (url) {
+                            window.location.href = url;
+                        }
+                    });
+                });
+            });
+        </script>    
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const teamMembers = document.querySelectorAll('.team-member1');
+            teamMembers.forEach(function(member) {
+                member.addEventListener('click', function() {
+                    const url = this.getAttribute('data-href');
+                    if (url) {
+                        window.location.href = url;
+                    }
+                });
+            });
+        });
+    </script>    
+    
 </body>
 </html>
            
